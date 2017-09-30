@@ -25605,25 +25605,19 @@
 
 	var React = __webpack_require__(1);
 
-	var WeatherMessage = React.createClass({
-	    displayName: 'WeatherMessage',
+	var WeatherMessage = function WeatherMessage(_ref) {
+	    var temp = _ref.temp,
+	        location = _ref.location;
 
-	    render: function render() {
-	        var _props = this.props,
-	            temp = _props.temp,
-	            location = _props.location;
-
-
-	        return React.createElement(
-	            'h3',
-	            null,
-	            'It\'s ',
-	            temp,
-	            ' in ',
-	            location
-	        );
-	    }
-	});
+	    return React.createElement(
+	        'h3',
+	        null,
+	        'It\'s ',
+	        temp,
+	        ' in ',
+	        location
+	    );
+	};
 
 	module.exports = WeatherMessage;
 
